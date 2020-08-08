@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="257" id="KGk-i7-Jjw" customClass="DummyCellTableViewCell" customModule="GrofersApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="403" height="257"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="403" height="257"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMU-tq-cxo">
+                        <rect key="frame" x="20" y="20" width="363" height="59"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="59" id="132-1D-4r0"/>
+                        </constraints>
+                        <string key="text">Your next available slot for non-milk items is 10 Aug 2020(Mon). You can place orders from 08 Aug2020(Sat). However, you can continue ordering milk items for next day.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="85" translatesAutoresizingMaskIntoConstraints="NO" id="iya-Nb-9aJ">
+                        <rect key="frame" x="91" y="99" width="185" height="50"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bZx-Hf-tsP">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="YAR-eb-mCc"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qNC-hh-hcv">
+                                <rect key="frame" x="135" y="0.0" width="50" height="50"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="DBy-50-JHS"/>
+                        </constraints>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="HJa-Pa-P8K">
+                        <rect key="frame" x="79" y="162" width="245" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Milk before 10:00 PM and get delivery by 09:00 AM next day" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heW-uN-qnM">
+                                <rect key="frame" x="0.0" y="0.0" width="111.5" height="50"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="OXh-1j-MlW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Milk before 10:00 PM and get delivery by 09:00 AM next day" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mqv-Qg-7yC">
+                                <rect key="frame" x="133.5" y="0.0" width="111.5" height="50"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stay Home, Stay Safe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rkb-rA-sWI">
+                        <rect key="frame" x="127.5" y="224" width="148" height="18"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="164" id="hAv-eL-W8G"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hAv-eL-W8G"/>
+                            </mask>
+                        </variation>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bMU-tq-cxo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="5Ol-sD-PP8"/>
+                    <constraint firstAttribute="trailing" secondItem="HJa-Pa-P8K" secondAttribute="trailing" constant="79" id="DWr-cI-3UF"/>
+                    <constraint firstItem="iya-Nb-9aJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="71" id="Egn-Pu-oWh"/>
+                    <constraint firstItem="Rkb-rA-sWI" firstAttribute="top" secondItem="HJa-Pa-P8K" secondAttribute="bottom" constant="12" id="Jym-f1-BzC"/>
+                    <constraint firstAttribute="trailing" secondItem="bMU-tq-cxo" secondAttribute="trailing" constant="20" id="LmL-aE-I3H"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Rkb-rA-sWI" secondAttribute="trailing" constant="93" id="LtI-6B-hCO"/>
+                    <constraint firstItem="iya-Nb-9aJ" firstAttribute="top" secondItem="bMU-tq-cxo" secondAttribute="bottom" constant="20" id="bBh-ta-9Ey"/>
+                    <constraint firstItem="Rkb-rA-sWI" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="cWE-fD-Hsj"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Rkb-rA-sWI" secondAttribute="bottom" constant="4" id="dmg-NT-l4y"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="iya-Nb-9aJ" secondAttribute="trailing" constant="107" id="fWD-xz-AOv"/>
+                    <constraint firstItem="bMU-tq-cxo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="kvR-a0-jix"/>
+                    <constraint firstItem="HJa-Pa-P8K" firstAttribute="top" secondItem="iya-Nb-9aJ" secondAttribute="bottom" constant="13" id="m4I-DT-S6w"/>
+                    <constraint firstItem="HJa-Pa-P8K" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="79" id="pMa-Ca-ulS"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="LtI-6B-hCO"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="197.82608695652175" y="223.32589285714283"/>
+        </tableViewCell>
+    </objects>
+</document>

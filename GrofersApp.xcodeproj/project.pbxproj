@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		476BBB5524DEF37400BE3377 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476BBB5424DEF37400BE3377 /* AppDelegate.swift */; };
+		476BBB5724DEF37400BE3377 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476BBB5624DEF37400BE3377 /* SceneDelegate.swift */; };
+		476BBB5924DEF37400BE3377 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476BBB5824DEF37400BE3377 /* ViewController.swift */; };
+		476BBB5C24DEF37400BE3377 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 476BBB5A24DEF37400BE3377 /* Main.storyboard */; };
+		476BBB5E24DEF37600BE3377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 476BBB5D24DEF37600BE3377 /* Assets.xcassets */; };
+		476BBB6124DEF37600BE3377 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 476BBB5F24DEF37600BE3377 /* LaunchScreen.storyboard */; };
+		476BBB6C24DEF37600BE3377 /* GrofersAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476BBB6B24DEF37600BE3377 /* GrofersAppTests.swift */; };
+		476BBB7724DEF37600BE3377 /* GrofersAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476BBB7624DEF37600BE3377 /* GrofersAppUITests.swift */; };
+		476BBB8824DF066600BE3377 /* DummyCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476BBB8624DF066600BE3377 /* DummyCellTableViewCell.swift */; };
+		476BBB8924DF066600BE3377 /* DummyCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 476BBB8724DF066600BE3377 /* DummyCellTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		476BBB6824DEF37600BE3377 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 476BBB4924DEF37400BE3377 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 476BBB5024DEF37400BE3377;
+			remoteInfo = GrofersApp;
+		};
+		476BBB7324DEF37600BE3377 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 476BBB4924DEF37400BE3377 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 476BBB5024DEF37400BE3377;
+			remoteInfo = GrofersApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		476BBB5124DEF37400BE3377 /* GrofersApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrofersApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		476BBB5424DEF37400BE3377 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		476BBB5624DEF37400BE3377 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		476BBB5824DEF37400BE3377 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		476BBB5B24DEF37400BE3377 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		476BBB5D24DEF37600BE3377 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		476BBB6024DEF37600BE3377 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		476BBB6224DEF37600BE3377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		476BBB6724DEF37600BE3377 /* GrofersAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrofersAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		476BBB6B24DEF37600BE3377 /* GrofersAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrofersAppTests.swift; sourceTree = "<group>"; };
+		476BBB6D24DEF37600BE3377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		476BBB7224DEF37600BE3377 /* GrofersAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrofersAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		476BBB7624DEF37600BE3377 /* GrofersAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrofersAppUITests.swift; sourceTree = "<group>"; };
+		476BBB7824DEF37600BE3377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		476BBB8624DF066600BE3377 /* DummyCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyCellTableViewCell.swift; sourceTree = "<group>"; };
+		476BBB8724DF066600BE3377 /* DummyCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DummyCellTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		476BBB4E24DEF37400BE3377 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476BBB6424DEF37600BE3377 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476BBB6F24DEF37600BE3377 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		476BBB4824DEF37400BE3377 = {
+			isa = PBXGroup;
+			children = (
+				476BBB5324DEF37400BE3377 /* GrofersApp */,
+				476BBB6A24DEF37600BE3377 /* GrofersAppTests */,
+				476BBB7524DEF37600BE3377 /* GrofersAppUITests */,
+				476BBB5224DEF37400BE3377 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		476BBB5224DEF37400BE3377 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				476BBB5124DEF37400BE3377 /* GrofersApp.app */,
+				476BBB6724DEF37600BE3377 /* GrofersAppTests.xctest */,
+				476BBB7224DEF37600BE3377 /* GrofersAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		476BBB5324DEF37400BE3377 /* GrofersApp */ = {
+			isa = PBXGroup;
+			children = (
+				476BBB5424DEF37400BE3377 /* AppDelegate.swift */,
+				476BBB5624DEF37400BE3377 /* SceneDelegate.swift */,
+				476BBB5824DEF37400BE3377 /* ViewController.swift */,
+				476BBB5A24DEF37400BE3377 /* Main.storyboard */,
+				476BBB5D24DEF37600BE3377 /* Assets.xcassets */,
+				476BBB5F24DEF37600BE3377 /* LaunchScreen.storyboard */,
+				476BBB6224DEF37600BE3377 /* Info.plist */,
+				476BBB8624DF066600BE3377 /* DummyCellTableViewCell.swift */,
+				476BBB8724DF066600BE3377 /* DummyCellTableViewCell.xib */,
+			);
+			path = GrofersApp;
+			sourceTree = "<group>";
+		};
+		476BBB6A24DEF37600BE3377 /* GrofersAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				476BBB6B24DEF37600BE3377 /* GrofersAppTests.swift */,
+				476BBB6D24DEF37600BE3377 /* Info.plist */,
+			);
+			path = GrofersAppTests;
+			sourceTree = "<group>";
+		};
+		476BBB7524DEF37600BE3377 /* GrofersAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				476BBB7624DEF37600BE3377 /* GrofersAppUITests.swift */,
+				476BBB7824DEF37600BE3377 /* Info.plist */,
+			);
+			path = GrofersAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		476BBB5024DEF37400BE3377 /* GrofersApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 476BBB7B24DEF37600BE3377 /* Build configuration list for PBXNativeTarget "GrofersApp" */;
+			buildPhases = (
+				476BBB4D24DEF37400BE3377 /* Sources */,
+				476BBB4E24DEF37400BE3377 /* Frameworks */,
+				476BBB4F24DEF37400BE3377 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrofersApp;
+			productName = GrofersApp;
+			productReference = 476BBB5124DEF37400BE3377 /* GrofersApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		476BBB6624DEF37600BE3377 /* GrofersAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 476BBB7E24DEF37600BE3377 /* Build configuration list for PBXNativeTarget "GrofersAppTests" */;
+			buildPhases = (
+				476BBB6324DEF37600BE3377 /* Sources */,
+				476BBB6424DEF37600BE3377 /* Frameworks */,
+				476BBB6524DEF37600BE3377 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				476BBB6924DEF37600BE3377 /* PBXTargetDependency */,
+			);
+			name = GrofersAppTests;
+			productName = GrofersAppTests;
+			productReference = 476BBB6724DEF37600BE3377 /* GrofersAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		476BBB7124DEF37600BE3377 /* GrofersAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 476BBB8124DEF37600BE3377 /* Build configuration list for PBXNativeTarget "GrofersAppUITests" */;
+			buildPhases = (
+				476BBB6E24DEF37600BE3377 /* Sources */,
+				476BBB6F24DEF37600BE3377 /* Frameworks */,
+				476BBB7024DEF37600BE3377 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				476BBB7424DEF37600BE3377 /* PBXTargetDependency */,
+			);
+			name = GrofersAppUITests;
+			productName = GrofersAppUITests;
+			productReference = 476BBB7224DEF37600BE3377 /* GrofersAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		476BBB4924DEF37400BE3377 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Shenu Gupta";
+				TargetAttributes = {
+					476BBB5024DEF37400BE3377 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					476BBB6624DEF37600BE3377 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 476BBB5024DEF37400BE3377;
+					};
+					476BBB7124DEF37600BE3377 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 476BBB5024DEF37400BE3377;
+					};
+				};
+			};
+			buildConfigurationList = 476BBB4C24DEF37400BE3377 /* Build configuration list for PBXProject "GrofersApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 476BBB4824DEF37400BE3377;
+			productRefGroup = 476BBB5224DEF37400BE3377 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				476BBB5024DEF37400BE3377 /* GrofersApp */,
+				476BBB6624DEF37600BE3377 /* GrofersAppTests */,
+				476BBB7124DEF37600BE3377 /* GrofersAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		476BBB4F24DEF37400BE3377 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				476BBB6124DEF37600BE3377 /* LaunchScreen.storyboard in Resources */,
+				476BBB5E24DEF37600BE3377 /* Assets.xcassets in Resources */,
+				476BBB8924DF066600BE3377 /* DummyCellTableViewCell.xib in Resources */,
+				476BBB5C24DEF37400BE3377 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476BBB6524DEF37600BE3377 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476BBB7024DEF37600BE3377 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		476BBB4D24DEF37400BE3377 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				476BBB5924DEF37400BE3377 /* ViewController.swift in Sources */,
+				476BBB5524DEF37400BE3377 /* AppDelegate.swift in Sources */,
+				476BBB8824DF066600BE3377 /* DummyCellTableViewCell.swift in Sources */,
+				476BBB5724DEF37400BE3377 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476BBB6324DEF37600BE3377 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				476BBB6C24DEF37600BE3377 /* GrofersAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476BBB6E24DEF37600BE3377 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				476BBB7724DEF37600BE3377 /* GrofersAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		476BBB6924DEF37600BE3377 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 476BBB5024DEF37400BE3377 /* GrofersApp */;
+			targetProxy = 476BBB6824DEF37600BE3377 /* PBXContainerItemProxy */;
+		};
+		476BBB7424DEF37600BE3377 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 476BBB5024DEF37400BE3377 /* GrofersApp */;
+			targetProxy = 476BBB7324DEF37600BE3377 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		476BBB5A24DEF37400BE3377 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				476BBB5B24DEF37400BE3377 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		476BBB5F24DEF37600BE3377 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				476BBB6024DEF37600BE3377 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		476BBB7924DEF37600BE3377 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		476BBB7A24DEF37600BE3377 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		476BBB7C24DEF37600BE3377 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GrofersApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jio.GrofersApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		476BBB7D24DEF37600BE3377 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GrofersApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jio.GrofersApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		476BBB7F24DEF37600BE3377 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GrofersAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jio.GrofersAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrofersApp.app/GrofersApp";
+			};
+			name = Debug;
+		};
+		476BBB8024DEF37600BE3377 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GrofersAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jio.GrofersAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrofersApp.app/GrofersApp";
+			};
+			name = Release;
+		};
+		476BBB8224DEF37600BE3377 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GrofersAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jio.GrofersAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GrofersApp;
+			};
+			name = Debug;
+		};
+		476BBB8324DEF37600BE3377 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GrofersAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jio.GrofersAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GrofersApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		476BBB4C24DEF37400BE3377 /* Build configuration list for PBXProject "GrofersApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				476BBB7924DEF37600BE3377 /* Debug */,
+				476BBB7A24DEF37600BE3377 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		476BBB7B24DEF37600BE3377 /* Build configuration list for PBXNativeTarget "GrofersApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				476BBB7C24DEF37600BE3377 /* Debug */,
+				476BBB7D24DEF37600BE3377 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		476BBB7E24DEF37600BE3377 /* Build configuration list for PBXNativeTarget "GrofersAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				476BBB7F24DEF37600BE3377 /* Debug */,
+				476BBB8024DEF37600BE3377 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		476BBB8124DEF37600BE3377 /* Build configuration list for PBXNativeTarget "GrofersAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				476BBB8224DEF37600BE3377 /* Debug */,
+				476BBB8324DEF37600BE3377 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 476BBB4924DEF37400BE3377 /* Project object */;
+}
