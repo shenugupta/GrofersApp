@@ -29,7 +29,7 @@ class AdvertisementTableViewCell: UITableViewCell {
  
 }
 
-extension AdvertisementTableViewCell: UICollectionViewDataSource,UICollectionViewDelegate {
+extension AdvertisementTableViewCell: UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
     
        func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
           return 5
@@ -45,8 +45,10 @@ extension AdvertisementTableViewCell: UICollectionViewDataSource,UICollectionVie
             return cell
         }
     
-    
-    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        return CGSize(width: collectionView.frame.size.width-120, height: collectionView.frame.size.height)
+    }
 }
 
 
