@@ -15,13 +15,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         tableView.register(UINib.init(nibName: "AdvertisementTableViewCell", bundle: nil), forCellReuseIdentifier: "AdvertisementTableViewCell")
          tableView.register(UINib.init(nibName: "DummyCellTableViewCell", bundle: nil), forCellReuseIdentifier: "DummyCellTableViewCell")
+        self.tableView.reloadData()
         // Do any additional setup after loading the view.
     }
 }
 
 extension ViewController: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 1
         
     }
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -43,6 +44,9 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 260.0
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150.0
     }
     
 }

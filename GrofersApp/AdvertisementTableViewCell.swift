@@ -16,6 +16,7 @@ class AdvertisementTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.advertismentCollectionView.register(UINib.init(nibName: "AdvertismentCollectionCell", bundle: nil), forCellWithReuseIdentifier: "AdvertismentCollectionCell")
+        self.advertismentCollectionView.reloadData()
         
         // Initialization code
     }
@@ -36,13 +37,16 @@ extension AdvertisementTableViewCell: UICollectionViewDataSource,UICollectionVie
         }
     
         func numberOfSections(in collectionView: UICollectionView) -> Int {
-            return 0
+            return 1
         }
     
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AdvertismentCollectionCell", for: indexPath)
             return cell
         }
+    
+    
+    
 }
 
 

@@ -16,16 +16,25 @@
                 <rect key="frame" x="0.0" y="0.0" width="235" height="132"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6IR-wr-XGi">
-                        <rect key="frame" x="0.0" y="-9" width="240" height="141"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6IR-wr-XGi">
+                        <rect key="frame" x="0.0" y="0.0" width="235" height="132"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </imageView>
-                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="sdF-aV-4re">
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="sdF-aV-4re">
                         <rect key="frame" x="98" y="108" width="39" height="37"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </pageControl>
                 </subviews>
             </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="6IR-wr-XGi" secondAttribute="trailing" id="7kX-xY-6jc"/>
+                <constraint firstItem="6IR-wr-XGi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="KSW-7h-0hu"/>
+                <constraint firstItem="sdF-aV-4re" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="OLp-Uu-ehB"/>
+                <constraint firstItem="sdF-aV-4re" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="60.5" id="YbS-8v-ObE"/>
+                <constraint firstItem="6IR-wr-XGi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="YoP-pI-ebX"/>
+                <constraint firstItem="6IR-wr-XGi" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="c7a-YY-yOu"/>
+                <constraint firstAttribute="bottom" secondItem="6IR-wr-XGi" secondAttribute="bottom" id="pwG-8h-EXe"/>
+                <constraint firstAttribute="bottom" secondItem="6IR-wr-XGi" secondAttribute="bottom" id="vOv-Jq-X3G"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="235" height="132"/>
             <point key="canvasLocation" x="271.73913043478262" y="180.13392857142856"/>
