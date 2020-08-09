@@ -17,6 +17,10 @@
 		476BBB7724DEF37600BE3377 /* GrofersAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476BBB7624DEF37600BE3377 /* GrofersAppUITests.swift */; };
 		476BBB8824DF066600BE3377 /* DummyCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476BBB8624DF066600BE3377 /* DummyCellTableViewCell.swift */; };
 		476BBB8924DF066600BE3377 /* DummyCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 476BBB8724DF066600BE3377 /* DummyCellTableViewCell.xib */; };
+		4777216924DFC9D900EE316A /* AdvertisementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4777216724DFC9D900EE316A /* AdvertisementTableViewCell.swift */; };
+		4777216A24DFC9D900EE316A /* AdvertisementTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4777216824DFC9D900EE316A /* AdvertisementTableViewCell.xib */; };
+		4777216D24DFCA4D00EE316A /* AdvertismentCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4777216B24DFCA4D00EE316A /* AdvertismentCollectionCell.swift */; };
+		4777216E24DFCA4D00EE316A /* AdvertismentCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4777216C24DFCA4D00EE316A /* AdvertismentCollectionCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		476BBB7824DEF37600BE3377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		476BBB8624DF066600BE3377 /* DummyCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyCellTableViewCell.swift; sourceTree = "<group>"; };
 		476BBB8724DF066600BE3377 /* DummyCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DummyCellTableViewCell.xib; sourceTree = "<group>"; };
+		4777216724DFC9D900EE316A /* AdvertisementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisementTableViewCell.swift; sourceTree = "<group>"; };
+		4777216824DFC9D900EE316A /* AdvertisementTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvertisementTableViewCell.xib; sourceTree = "<group>"; };
+		4777216B24DFCA4D00EE316A /* AdvertismentCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertismentCollectionCell.swift; sourceTree = "<group>"; };
+		4777216C24DFCA4D00EE316A /* AdvertismentCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvertismentCollectionCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +120,10 @@
 				476BBB6224DEF37600BE3377 /* Info.plist */,
 				476BBB8624DF066600BE3377 /* DummyCellTableViewCell.swift */,
 				476BBB8724DF066600BE3377 /* DummyCellTableViewCell.xib */,
+				4777216724DFC9D900EE316A /* AdvertisementTableViewCell.swift */,
+				4777216824DFC9D900EE316A /* AdvertisementTableViewCell.xib */,
+				4777216B24DFCA4D00EE316A /* AdvertismentCollectionCell.swift */,
+				4777216C24DFCA4D00EE316A /* AdvertismentCollectionCell.xib */,
 			);
 			path = GrofersApp;
 			sourceTree = "<group>";
@@ -239,7 +251,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				476BBB6124DEF37600BE3377 /* LaunchScreen.storyboard in Resources */,
+				4777216E24DFCA4D00EE316A /* AdvertismentCollectionCell.xib in Resources */,
 				476BBB5E24DEF37600BE3377 /* Assets.xcassets in Resources */,
+				4777216A24DFC9D900EE316A /* AdvertisementTableViewCell.xib in Resources */,
 				476BBB8924DF066600BE3377 /* DummyCellTableViewCell.xib in Resources */,
 				476BBB5C24DEF37400BE3377 /* Main.storyboard in Resources */,
 			);
@@ -268,8 +282,10 @@
 			files = (
 				476BBB5924DEF37400BE3377 /* ViewController.swift in Sources */,
 				476BBB5524DEF37400BE3377 /* AppDelegate.swift in Sources */,
+				4777216D24DFCA4D00EE316A /* AdvertismentCollectionCell.swift in Sources */,
 				476BBB8824DF066600BE3377 /* DummyCellTableViewCell.swift in Sources */,
 				476BBB5724DEF37400BE3377 /* SceneDelegate.swift in Sources */,
+				4777216924DFC9D900EE316A /* AdvertisementTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

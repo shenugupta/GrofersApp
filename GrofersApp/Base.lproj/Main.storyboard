@@ -33,6 +33,10 @@
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Meb-Od-Ofx">
                                         <rect key="frame" x="0.0" y="56" width="414" height="799"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="kD2-SQ-Lyq"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="SfT-dZ-2Wh"/>
+                                        </connections>
                                     </tableView>
                                 </subviews>
                             </stackView>
@@ -46,6 +50,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="Meb-Od-Ofx" id="nOL-wN-NFV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
