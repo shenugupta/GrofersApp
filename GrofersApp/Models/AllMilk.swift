@@ -9,10 +9,10 @@
 import UIKit
 
 struct AllMilk {
-    var milkName: String
-    var milkType: String
-    var milkPrice: String
-    var milkQty: String
-    var imageURL: String
+    let milkName: String
+    let milkType: String
+    let milkPrice: String
+    let milkQty: Int
+    let imageURL: String
 }
 

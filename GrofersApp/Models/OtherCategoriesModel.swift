@@ -8,6 +8,6 @@
 
 import UIKit
 
-struct OtherCategoriesModel {
+struct OtherCategoriesModel: Codable {
     var imageUrl: String
 }

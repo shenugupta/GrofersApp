@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct CategoriesModel {
+struct CategoriesModel: Codable{
     var imageUrl: String
     var milkName: String
 }
