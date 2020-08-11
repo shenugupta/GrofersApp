@@ -10,32 +10,127 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
-
+    var groferViewModel = GrofersViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib.init(nibName: "AdvertisementTableViewCell", bundle: nil), forCellReuseIdentifier: "AdvertisementTableViewCell")
-         tableView.register(UINib.init(nibName: "DummyCellTableViewCell", bundle: nil), forCellReuseIdentifier: "DummyCellTableViewCell")
+        tableView.register(UINib.init(nibName: "DummyCellTableViewCell", bundle: nil), forCellReuseIdentifier: "DummyCellTableViewCell")
         self.tableView.reloadData()
         // Do any additional setup after loading the view.
+    }
+    
+    
+    func fetchMilkData() {
+        do{
+            try groferViewModel.fetchAllMilkData()
+        }
+        catch {
+            let alert = UIAlertController(title: "Alert", message: "Unable to fetch data", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
+        self.reloadAllMilkList()
+    }
+    
+    func fetchAdvertismentData() {
+        do {
+            try groferViewModel.fetchAdvertismentData()
+        }
+        catch {
+            let alert = UIAlertController(title: "Alert", message: "Unable to fetch data", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
+        self.reloadAdvertisementList()
+    }
+    
+    func fetchCategoryData() {
+        do {
+            try groferViewModel.fetchCategoriesList()
+        }
+        catch {
+            let alert = UIAlertController(title: "Alert", message: "Unable to fetch data", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
+        self.reloadCategoriesList()
+    }
+    
+    func fetchOtherData() {
+        do {
+            try groferViewModel.otherCategoriesList()
+        }
+        catch {
+            let alert = UIAlertController(title: "Alert", message: "Unable to fetch data", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
+        self.reloadOtherCategoriesList()
+    }
+    
+    func reloadAllMilkList() {
+        groferViewModel.reloadMilkList = {[weak self] () in
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
+        }
+    }
+    
+    func reloadCategoriesList() {
+        groferViewModel.reloadCategoriesList = { [weak self] in
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
+        }
+    }
+    
+    func reloadOtherCategoriesList() {
+        groferViewModel.reloadOtherCategoriesList = { [weak self] in
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
+        }
+    }
+    
+    func reloadAdvertisementList() {
+        groferViewModel.reloadAdvertismentList = { [weak self] in
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
+        }
     }
 }
 
 extension ViewController: UITableViewDelegate,UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-        
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return GrofersCategories.allCases.count
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "AdvertisementTableViewCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AdvertisementTableViewCell", for: indexPath) as! AdvertisementTableViewCell
+        if indexPath.row == GrofersCategories.AllMilks.rawValue {
+            cell.updateAllMilkCellWith(allMilkArr: groferViewModel.milkItems!)
+        }
+        else if indexPath.row == GrofersCategories.Categories.rawValue {
+            cell.updateCategoryCellWith(categoryArr: groferViewModel.categoryItems!)
+        }
+        else if indexPath.row == GrofersCategories.Adverstisements.rawValue {
+            cell.updateAdvertisementCellWith(advertisementArr: groferViewModel.advertisementItems!)
+        }
+        else{
+            cell.updateOtherCategoryWith(otherCategoryArr: groferViewModel.otherCategoriesItems!)
+        }
+        
         return cell
         
     }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-         let custumHeader = tableView.dequeueReusableCell(withIdentifier: "DummyCellTableViewCell") as! DummyCellTableViewCell
+        let custumHeader = tableView.dequeueReusableCell(withIdentifier: "DummyCellTableViewCell") as! DummyCellTableViewCell
         return custumHeader
     }
     

@@ -12,6 +12,11 @@ class AdvertisementTableViewCell: UITableViewCell {
    
     @IBOutlet weak var advertismentCollectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
+    var advertismentArr: [AdvertismentModel]?
+    var allMilkArr: [AllMilk]?
+    var categoryArr: [CategoriesModel]?
+    var otherCategoryArr: [OtherCategoriesModel]?
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,6 +36,23 @@ class AdvertisementTableViewCell: UITableViewCell {
 }
 
 extension AdvertisementTableViewCell: UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
+    
+    func updateAllMilkCellWith(allMilkArr: [AllMilk]) {
+        self.allMilkArr = allMilkArr
+    }
+    
+    func updateCategoryCellWith(categoryArr: [CategoriesModel]) {
+        self.categoryArr = categoryArr
+    }
+    
+    func updateAdvertisementCellWith(advertisementArr: [AdvertismentModel]){
+        self.advertismentArr = advertisementArr
+        
+    }
+    
+    func updateOtherCategoryWith(otherCategoryArr: [OtherCategoriesModel]) {
+        self.otherCategoryArr = otherCategoryArr
+    }
     
        func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
           return 5

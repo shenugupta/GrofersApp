@@ -8,8 +8,8 @@
 
 import UIKit
 
-enum GrofersCategories {
-    case Adverstisements
+enum GrofersCategories: Int,CaseIterable {
+    case Adverstisements = 0
     case AllMilks
     case Categories
     case DealOfTheDay
@@ -47,7 +47,6 @@ class GrofersViewModel {
         }
     }
         
-    
  
     func fetchAllMilkData() throws {
         var allMilkData: [AllMilk]? = []

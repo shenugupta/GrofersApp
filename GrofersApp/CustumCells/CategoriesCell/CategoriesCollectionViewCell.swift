@@ -14,5 +14,4 @@ class CategoriesCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
 }
