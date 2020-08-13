@@ -14,9 +14,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(UINib.init(nibName: "AdvertisementTableViewCell", bundle: nil), forCellReuseIdentifier: "AdvertisementTableViewCell")
+       tableView.register(UINib.init(nibName: "AdvertisementTableViewCell", bundle: nil), forCellReuseIdentifier: "AdvertisementTableViewCell")
         tableView.register(UINib.init(nibName: "DummyCellTableViewCell", bundle: nil), forCellReuseIdentifier: "DummyCellTableViewCell")
-        self.tableView.reloadData()
+        fetchAdvertismentData()
+        fetchMilkData()
+        fetchCategoryData()
+        fetchOtherData()
         // Do any additional setup after loading the view.
     }
     
@@ -113,18 +116,31 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AdvertisementTableViewCell", for: indexPath) as! AdvertisementTableViewCell
+        if indexPath.row == GrofersCategories.Adverstisements.rawValue {
+            if let advertisementItems = groferViewModel.advertisementItems {
+              cell.updateAdvertisementCellWith(advertisementArr:advertisementItems)
+         }
+        }
         if indexPath.row == GrofersCategories.AllMilks.rawValue {
-            cell.updateAllMilkCellWith(allMilkArr: groferViewModel.milkItems!)
+            if let milkItems = groferViewModel.milkItems {
+            cell.updateAllMilkCellWith(allMilkArr: milkItems)
+         }
         }
         else if indexPath.row == GrofersCategories.Categories.rawValue {
-            cell.updateCategoryCellWith(categoryArr: groferViewModel.categoryItems!)
+                if let categories = groferViewModel.categoryItems {
+            cell.updateCategoryCellWith(categoryArr: categories)
         }
-        else if indexPath.row == GrofersCategories.Adverstisements.rawValue {
-            cell.updateAdvertisementCellWith(advertisementArr: groferViewModel.advertisementItems!)
+      }
+        else if indexPath.row == GrofersCategories.DealOfTheDay.rawValue {
+          if let advertisementItems = groferViewModel.advertisementItems {
+            cell.updateAdvertisementCellWith(advertisementArr: advertisementItems)
+         }
         }
         else{
-            cell.updateOtherCategoryWith(otherCategoryArr: groferViewModel.otherCategoriesItems!)
+         if let otherCategories = groferViewModel.otherCategoriesItems {
+            cell.updateOtherCategoryWith(otherCategoryArr: otherCategories)
         }
+      }
         
         return cell
         
